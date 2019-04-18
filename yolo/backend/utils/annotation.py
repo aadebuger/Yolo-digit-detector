@@ -146,6 +146,7 @@ class PascalVocXmlParser(object):
         return bbs
 
     def _root_tag(self, fname):
+        print("fname=",fname)
         tree = parse(fname)
         root = tree.getroot()
         return root
